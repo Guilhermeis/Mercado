@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR"> <!-- Declara o tipo de documento como HTML5 e define o idioma como português do Brasil -->
+<head>
+  <meta charset="UTF-8" /> <!-- Define a codificação de caracteres para UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/> <!-- Define a viewport para uma responsividade adequada -->
+  <title>Ofertas da Semana - Mercado São Manoel</title> <!-- Título da página que será exibido na aba do navegador -->
+  <link rel="stylesheet" href="index.css" /> <!-- Vincula o arquivo CSS externo para estilizar a página -->
+</head>
+<body> <!-- Início do corpo do documento -->
+
+  <!-- Cabeçalho da página -->
+  <header>
+    <h1>Ofertas da Semana</h1> <!-- Título principal da página -->
+    <a href="index.html" class="botao-ofertas">Voltar para Produtos</a> <!-- Link que leva de volta para a página de produtos -->
+  </header>
+
+  <!-- Seção do carrinho de compras -->
+  <div id="carrinho">
+    <strong>Carrinho:</strong> <!-- Texto fixo "Carrinho" -->
+    <span id="total">0</span> itens <!-- Exibe o número de itens no carrinho. Inicialmente, está 0 -->
+  </div>
+
+  <!-- Seção que exibe os produtos em oferta -->
+  <section class="produtos">
+    <!-- Produto 1 em oferta -->
+    <div class="produto">
+      <img src="arroz.jpg" alt="Arroz"> <!-- Imagem do produto -->
+      <h3>Arroz (5kg)</h3> <!-- Nome do produto -->
+      <p><del>R$ 25,00</del> <strong>R$ 19,90</strong></p> <!-- Preço original riscados e o novo preço com desconto -->
+      <button onclick="adicionarAoCarrinho('Arroz em Promoção')">Adicionar</button> <!-- Botão que chama a função para adicionar o produto ao carrinho -->
+    </div>
+
+    <!-- Produto 2 em oferta -->
+    <div class="produto">
+      <img src="café.jpg" alt="Café"> <!-- Imagem do produto -->
+      <h3>Café Tradicional</h3> <!-- Nome do produto -->
+      <p><del>R$ 30,00</del> <strong>R$ 22,90</strong></p> <!-- Preço original e o novo preço com desconto -->
+      <button onclick="adicionarAoCarrinho('Café em Promoção')">Adicionar</button> <!-- Botão para adicionar o produto ao carrinho -->
+    </div>
+
+    <!-- Produto 3 em oferta -->
+    <div class="produto">
+      <img src="oleo.jpg" alt="Óleo"> <!-- Imagem do produto -->
+      <h3>Óleo de Soja</h3> <!-- Nome do produto -->
+      <p><del>R$ 9,80</del> <strong>R$ 7,50</strong></p> <!-- Preço original e o novo preço com desconto -->
+      <button onclick="adicionarAoCarrinho('Óleo em Promoção')">Adicionar</button> <!-- Botão para adicionar o produto ao carrinho -->
+    </div>
+  </section>
+
+  <!-- Rodapé da página -->
+  <footer>
+    <p>&copy; 2025 Mercado São Manoel - Todos os direitos reservados</p> <!-- Texto de direitos autorais -->
+    <p><a href="index.html" style="color: #fff; text-decoration: underline;">Voltar à Página Principal</a></p> <!-- Link para voltar à página principal -->
+  </footer>
+
+  <!-- Script JavaScript para manipulação do carrinho -->
+  <script>
+    let totalItens = 0; <!-- Variável que mantém o número total de itens no carrinho -->
+    function adicionarAoCarrinho(produto) {
+      totalItens++; 
+      
+    }
+      
+  </script>
+
+</body>
+</html>

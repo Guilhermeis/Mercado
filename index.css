@@ -1,0 +1,85 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Define a fonte do corpo da página */
+    background-color: #f9fbfd; /* Cor de fundo da página */
+    margin: 0; /* Remove as margens padrão do corpo */
+    padding: 0; /* Remove o preenchimento padrão do corpo */
+    color: #1f2d3d; /* Define a cor do texto */
+}
+  
+header {
+    background-color: #1e3a8a; /* Cor de fundo do cabeçalho */
+    color: white; /* Cor do texto no cabeçalho */
+    text-align: center; /* Alinha o texto no centro */
+    padding: 1.5em 0; /* Adiciona um espaçamento interno no cabeçalho */
+    font-size: 1.5rem; /* Define o tamanho da fonte */
+    font-weight: bold; /* Define o peso da fonte */
+    letter-spacing: 1px; /* Define o espaçamento entre as letras */
+}
+  
+.produtos {
+    display: flex; /* Define que os produtos vão se alinhar em linha */
+    flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte, se necessário */
+    justify-content: center; /* Alinha os produtos ao centro */
+    gap: 24px; /* Adiciona um espaçamento entre os produtos */
+    padding: 32px; /* Adiciona um preenchimento em volta da seção de produtos */
+}
+  
+.produto {
+    background-color: white; /* Cor de fundo do produto */
+    border: 1px solid #e2e8f0; /* Borda do produto */
+    border-radius: 16px; /* Bordas arredondadas */
+    width: 220px; /* Largura fixa para cada produto */
+    text-align: center; /* Alinha o texto ao centro */
+    padding: 16px; /* Adiciona preenchimento interno */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Adiciona sombra ao redor do produto */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Transição suave quando o produto é hover */
+}
+  
+.produto:hover {
+    transform: translateY(-4px); /* Move o produto para cima quando é hover */
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1); /* Aumenta a sombra quando é hover */
+}
+  
+.produto img {
+    max-width: 100%; /* Garante que a imagem do produto ocupe toda a largura disponível */
+    border-radius: 12px; /* Bordas arredondadas para as imagens */
+    margin-bottom: 10px; /* Espaço abaixo da imagem */
+}
+  
+footer {
+    background-color: #1e3a8a; /* Cor de fundo do rodapé */
+    color: white; /* Cor do texto no rodapé */
+    text-align: center; /* Alinha o texto ao centro */
+    padding: 1.5em 0; /* Adiciona espaçamento interno */
+    font-size: 0.95rem; /* Define o tamanho da fonte */
+    margin-top: 40px; /* Adiciona margem superior */
+}
+  
+#carrinho {
+    position: fixed; /* Fixa o carrinho no topo da página */
+    top: 80px; /* Distância do topo */
+    right: 20px; /* Distância da borda direita */
+    background-color: white; /* Cor de fundo do carrinho */
+    border: 1px solid #ccc; /* Borda do carrinho */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 10px; /* Preenchimento interno */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra ao redor do carrinho */
+    z-index: 10; /* Coloca o carrinho sobre outros elementos */
+}
+  
+.botao-ofertas {
+    position: absolute; /* Define que o botão está posicionado de forma absoluta */
+    top: 20px; /* Distância do topo */
+    right: 20px; /* Distância da borda direita */
+    background-color: #facc15; /* Cor de fundo do botão */
+    color: #1e3a8a; /* Cor do texto do botão */
+    padding: 10px 16px; /* Preenchimento do botão */
+    border-radius: 10px; /* Bordas arredondadas para o botão */
+    text-decoration: none; /* Remove sublinhado do link */
+    font-weight: bold; /* Define o peso da fonte como negrito */
+    transition: background-color 0.3s; /* Transição suave para a mudança de cor de fundo */
+}
+  
+.botao-ofertas:hover {
+    background-color: #fbbf24; /* Cor do fundo do botão quando é hover */
+}

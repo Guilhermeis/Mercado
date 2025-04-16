@@ -1,0 +1,87 @@
+<!DOCTYPE html> <!-- Declaração do tipo de documento, definindo que o código é HTML5 -->
+<html lang="pt-BR"> <!-- Define o idioma da página como Português do Brasil -->
+<head>
+  <meta charset="UTF-8" /> <!-- Define a codificação de caracteres para UTF-8, para garantir o correto exibição de caracteres especiais -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Configura a visualização em dispositivos móveis, ajustando o layout ao tamanho da tela -->
+  <title>Mercado São Manoel</title> <!-- Define o título da página, que aparecerá na aba do navegador -->
+  <link rel="stylesheet" href="index.css" /> <!-- Vincula o arquivo CSS para estilização da página -->
+</head>
+<body>
+
+  <header> <!-- Início do cabeçalho da página -->
+    <h1>Mercado São Manoel</h1> <!-- Título principal da página -->
+    <a href="ofertas.html" class="botao-ofertas">Ofertas da Semana</a> <!-- Link para a página de ofertas da semana -->
+  </header>
+
+  <div id="carrinho"> <!-- Seção do carrinho de compras -->
+    <strong>Carrinho:</strong> 
+    <span id="total">0</span> itens <!-- Exibe a quantidade de itens no carrinho -->
+  </div>
+
+  <section class="produtos"> <!-- Seção que contém todos os produtos -->
+    <div class="produto"> <!-- Produto 1 -->
+      <img src="arroz.jpg" alt="Arroz"> <!-- Imagem do produto Arroz -->
+      <h3>Arroz</h3> <!-- Nome do produto -->
+      <p>R$ 25,00</p> <!-- Preço do produto -->
+      <button onclick="adicionarAoCarrinho('Arroz')">Adicionar</button> <!-- Botão para adicionar o produto ao carrinho -->
+    </div>
+
+    <div class="produto"> <!-- Produto 2 -->
+      <img src="feijao.jpg" alt="Feijão"> <!-- Imagem do produto Feijão -->
+      <h3>Feijão</h3> <!-- Nome do produto -->
+      <p>R$ 8,50</p> <!-- Preço do produto -->
+      <button onclick="adicionarAoCarrinho('Feijão')">Adicionar</button> <!-- Botão para adicionar o produto ao carrinho -->
+    </div>
+
+    <div class="produto"> <!-- Produto 3 -->
+      <img src="macarrão.jpg" alt="Macarrão"> <!-- Imagem do produto Macarrão -->
+      <h3>Macarrão</h3> <!-- Nome do produto -->
+      <p>R$ 4,00</p> <!-- Preço do produto -->
+      <button onclick="adicionarAoCarrinho('Macarrão')">Adicionar</button> <!-- Botão para adicionar o produto ao carrinho -->
+    </div>
+
+    <div class="produto"> <!-- Produto 4 -->
+      <img src="leite.jpg" alt="Leite"> <!-- Imagem do produto Leite -->
+      <h3>Leite</h3> <!-- Nome do produto -->
+      <p>R$ 3,80</p> <!-- Preço do produto -->
+      <button onclick="adicionarAoCarrinho('Leite')">Adicionar</button> <!-- Botão para adicionar o produto ao carrinho -->
+    </div>
+
+    <div class="produto"> <!-- Produto 5 -->
+      <img src="café.jpg" alt="Café"> <!-- Imagem do produto Café -->
+      <h3>Café</h3> <!-- Nome do produto -->
+      <p>R$ 30,00</p> <!-- Preço do produto -->
+      <button onclick="adicionarAoCarrinho('Café')">Adicionar</button> <!-- Botão para adicionar o produto ao carrinho -->
+    </div>
+
+    <div class="produto"> <!-- Produto 6 -->
+      <img src="oleo.jpg" alt="Óleo"> <!-- Imagem do produto Óleo -->
+      <h3>Óleo</h3> <!-- Nome do produto -->
+      <p>R$ 9,80</p> <!-- Preço do produto -->
+      <button onclick="adicionarAoCarrinho('Óleo')">Adicionar</button> <!-- Botão para adicionar o produto ao carrinho -->
+    </div>
+
+    <div class="produto"> <!-- Produto 7 -->
+      <img src="suco.jpg" alt="Suco"> <!-- Imagem do produto Suco -->
+      <h3>Suco</h3> <!-- Nome do produto -->
+      <p>R$ 5,45</p> <!-- Preço do produto -->
+      <button onclick="adicionarAoCarrinho('Suco')">Adicionar</button> <!-- Botão para adicionar o produto ao carrinho -->
+    </div>
+  </section>
+
+  <footer> <!-- Rodapé da página -->
+    <p>&copy; 2025 Mercado São Manoel - Todos os direitos reservados</p> <!-- Informações de copyright -->
+  </footer>
+
+  <script> <!-- Início do script JavaScript -->
+    let totalItens = 0; //-- Variável que conta o número de itens no carrinho -->
+
+    function adicionarAoCarrinho(produto) { //-- Função que é chamada quando o usuário adiciona um item ao carrinho -->
+      totalItens++; //-- Incrementa o número de itens no carrinho -->
+      document.getElementById('total').innerText = totalItens; //-- Atualiza o número de itens exibidos no carrinho -->
+      alert(produto + ' adicionado ao carrinho!'); //-- Exibe um alerta informando que o produto foi adicionado ao carrinho -->
+    }
+  </script> <!-- Fim do script -->
+
+</body>
+</html>
